@@ -1,0 +1,84 @@
+title: "Plainview–Old Bethpage Soccer Club"
+description: "Youth soccer for Plainview and Old Bethpage, New York, since 1974."
+url: ""
+baseurl: ""
+markdown: kramdown
+
+collections:
+  pages:
+    output: true
+    permalink: /:name.html
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+
+nav:
+  - label: Programs
+    items:
+      - page: register
+        text: Registration
+      - page: intramural
+        text: "Intramural & Little Nuggets"
+      - page: schedule
+        text: "Intramural Schedule & Locations"
+      - page: participation-rules
+        text: "Participation Rules & Guidelines"
+      - page: u9-u10-rules
+        text: "U9/U10 Rules"
+      - page: topsoccer
+        text: TOPSoccer
+      - page: topsoccer-schedule
+        text: "TOPSoccer Schedule"
+  - label: Travel
+    items:
+      - page: travel-tryouts
+        text: "Club-Led Tryout Q&A"
+      - page: travel-uniforms
+        text: "Travel Uniform Ordering"
+      - page: player-pass
+        text: "Player Pass Information"
+  - label: Referees
+    items:
+      - page: referees
+        text: "Referee Program"
+      - page: referee-pre-game
+        text: "Pre-Game Responsibilities"
+      - page: referee-first-impression
+        text: "Making a Good First Impression"
+  - label: Club
+    items:
+      - page: officials
+        text: "Club Officials"
+      - page: by-laws
+        text: "Club By-Laws"
+      - page: policies
+        text: "Policies & Procedures"
+      - page: code-of-conduct
+        text: "Code of Conduct"
+      - page: zero-tolerance
+        text: "Zero Tolerance Policy"
+      - page: concussion
+        text: "U.S. Soccer Concussion Initiative"
+      - page: sponsorship
+        text: Sponsorship
+  - label: Info
+    items:
+      - page: news
+        text: News
+      - page: fields
+        text: "Field Locations"
+      - page: forms
+        text: "Online Forms"
+      - page: contact
+        text: "Contact Us"
+
+exclude:
+  - build.py
+  - src
+  - README.md
+  - Gemfile
+  - Gemfile.lock

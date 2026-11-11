@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title | escape }} &middot; Plainview&ndash;Old Bethpage Soccer Club</title>
+<meta name="description" content="{{ page.lead | default: site.description | strip_html | escape }}">
+<link rel="icon" href="assets/pobsc-shield.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<a id="logo" class="static" href="index.html" aria-label="Plainview&ndash;Old Bethpage Soccer Club home">
+  <div class="inner"><img src="assets/pobsc-shield.png" alt="" draggable="false"></div>
+</a>
+
+{% include nav.html %}
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a>{% if page.section %} <span>/</span> {{ page.section }}{% endif %}</div>
+    <h1>{{ page.title }}</h1>
+    {% if page.lead %}<p class="lead">{{ page.lead }}</p>{% endif %}
+  </div>
+</section>
+<main class="page" id="top">
+  <div class="wrap page-grid">
+    <article class="prose">
+{{ content }}
+    </article>
+    {% if page.section %}
+    {% for section in site.nav %}
+    {% if section.label == page.section %}
+    <aside class="side">
+      <div class="side-box">
+        <h4>{{ section.label }}</h4>
+        {% assign current_slug = page.name | replace: '.html', '' | replace: '.md', '' %}
+        {% for item in section.items %}
+        <a href="{{ item.page }}.html"{% if item.page == current_slug %} aria-current="page"{% endif %}>{{ item.text }}</a>
+        {% endfor %}
+      </div>
+      <div class="side-cta"><b>2026&ndash;27 registration is open</b><a class="btn" href="register.html">Register</a></div>
+    </aside>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+  </div>
+</main>
+
+{% include footer.html %}
+
+<script src="assets/site.js"></script>
+</body>
+</html>

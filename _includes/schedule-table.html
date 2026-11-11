@@ -1,0 +1,11 @@
+<table>
+<thead><tr><th>Date</th><th>Week</th></tr></thead>
+<tbody>
+{% for week in include.items %}
+<tr>
+  <td>{{ week.date }}</td>
+  <td>{% if week.note %}<strong>{{ week.note }}</strong>{% else %}{{ week.week }}{% endif %}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>

@@ -1,25 +1,41 @@
 # Plainview–Old Bethpage Soccer Club website
 
-Static site served by GitHub Pages at https://sth2258.github.io/pob-soccer-site/.
+Static site built with [Jekyll](https://jekyllrb.com/) and served by GitHub Pages.
 
-## Editing
+## Editing content
 
-Page content lives in `src/pages/` — one HTML fragment per page. Edit the fragment, then rebuild:
+Each page is an HTML file at the repo root with YAML frontmatter at the top:
 
-```bash
-python3 build.py
+```yaml
+---
+layout: page
+title: "Contact Us"
+lead: "The preferred method of communication is email."
+section: Info
+---
 ```
 
-`build.py` wraps each fragment in the shared header, menus and footer and writes the finished pages to the repo root. Commit both the fragment and the generated page, then push; GitHub Pages redeploys in a minute or two.
+Edit the content below the frontmatter, commit, and push — GitHub Pages rebuilds automatically.
 
-- **Menus / adding a page:** create `src/pages/<name>.html` and add it to `NAV` in `build.py`.
-- **Styles:** `assets/site.css`. **Home page intro animation:** `assets/home.js`.
-- **Documents and images:** `assets/docs/` and `assets/img/`.
+**Quick edits:** open any `.html` file on GitHub and click the pencil icon to edit in your browser.
+
+## Site structure
+
+- **`_config.yml`** — site settings and navigation menu structure
+- **`_layouts/`** — page templates (home page and interior pages)
+- **`_includes/`** — shared components (nav, footer)
+- **`assets/`** — CSS, JS, images, and documents
+- **`*.html`** (root) — page content files
+
+## Adding or removing a page
+
+1. Create a new `.html` file at the repo root with the frontmatter above
+2. Add the page to the `nav` section in `_config.yml`
 
 ## Preview locally
 
 ```bash
-python3 -m http.server 8000
+bundle exec jekyll serve
 ```
 
-Then open http://localhost:8000.
+Then open http://localhost:4000.

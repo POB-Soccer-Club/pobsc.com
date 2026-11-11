@@ -1,0 +1,12 @@
+<div class="program-list">
+{% for prog in include.items %}
+  <div class="program-row">
+    <div>
+      <h3>{{ prog.title }}</h3>
+      <p>{{ prog.description }}</p>
+      <a class="btn" href="{{ prog.url }}">Register</a>
+    </div>
+    {% if prog.qr %}<img src="{{ prog.qr }}" alt="QR code for {{ prog.title }} registration">{% endif %}
+  </div>
+{% endfor %}
+</div>

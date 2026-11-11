@@ -1,0 +1,19 @@
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>POB Soccer Club</h4>
+        <p style="line-height:1.6;margin:0">Promoting and developing youth soccer in Plainview-Old Bethpage since 1974.<br/><br />P.O. Box 212<br />Old Bethpage, NY 11804<br><a href="mailto:contact@pobsc.com" style="display:inline">contact@pobsc.com</a></p>
+      </div>
+      {% for section in site.nav %}
+      <div>
+        <h4>{{ section.label }}</h4>
+        {% for item in section.items %}
+        <a href="{{ item.page }}.html">{{ item.text }}</a>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+    <div class="legal"><span>&copy; 2026 Plainview&ndash;Old Bethpage Soccer Club &middot; 501(c)(3) non-profit</span><span>Prototype</span></div>
+  </div>
+</footer>

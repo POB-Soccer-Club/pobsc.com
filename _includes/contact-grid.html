@@ -1,0 +1,10 @@
+<div class="field-grid">
+{% for item in include.items %}
+  <div class="field-card">
+    <h3>{{ item.title }}</h3>
+    {% if item.address %}<p>{{ item.address }}</p>{% endif %}
+    {% if item.email %}<p><a href="mailto:{{ item.email }}">{{ item.email }}</a></p>{% endif %}
+    {% if item.button %}<p><a class="btn" href="mailto:{{ item.email }}">{{ item.button }}</a></p>{% endif %}
+  </div>
+{% endfor %}
+</div>

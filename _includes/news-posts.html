@@ -1,0 +1,7 @@
+{% for post in include.items %}
+<article class="news-post" id="{{ post.id }}">
+  <time datetime="{{ post.date }}">{{ post.display_date }}</time>
+  <h2>{{ post.title }}</h2>
+  {{ post.body }}
+</article>
+{% endfor %}

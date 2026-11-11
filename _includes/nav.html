@@ -1,0 +1,35 @@
+{% assign current_slug = page.name | replace: '.html', '' | replace: '.md', '' %}
+{% if current_slug == "index" %}
+  {% assign current_slug = "" %}
+{% endif %}
+
+<header id="header"{% unless include.home %} class="solid"{% endunless %}>
+  <a class="brand{% unless include.home %} show{% endunless %}" id="brand" href="index.html">
+    <b>Plainview&ndash;Old Bethpage</b>
+    <span>Soccer Club</span>
+  </a>
+  <nav id="nav"{% unless include.home %} class="show"{% endunless %} aria-label="Main">
+    {% for section in site.nav %}
+    {% assign is_active = false %}
+    {% if page.section == section.label %}
+      {% assign is_active = true %}
+    {% else %}
+      {% for item in section.items %}
+        {% if item.page == current_slug %}
+          {% assign is_active = true %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    <div class="nav-item{% if is_active %} active{% endif %}">
+      <button class="nav-top" aria-expanded="false">{{ section.label }}</button>
+      <div class="dropdown">
+        {% for item in section.items %}
+        <a href="{{ item.page }}.html"{% if item.page == current_slug %} aria-current="page"{% endif %}>{{ item.text }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+    <a class="btn" href="register.html">Register</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+</header>
