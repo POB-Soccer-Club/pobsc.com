@@ -37,4 +37,4 @@ fields:
 
 {% include field-grid.html items=page.fields %}
 
-See the [Intramural Schedule](schedule.html) for which division plays where and when.
+See the [Intramural Schedule]({{ site.baseurl }}/schedule.html) for which division plays where and when.

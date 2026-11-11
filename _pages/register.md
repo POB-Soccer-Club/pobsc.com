@@ -30,7 +30,7 @@ We've moved to **Byga**, our new online registration platform. Sign up for any o
 {% include program-cards.html items=page.programs %}
 
 <div class="callout">
-  <p><strong>First time on Byga?</strong> You'll need to create a free account before registering. It only takes a minute — just click any program link above and select "Sign up as a new user" to get started. Questions? <a href="contact.html">Contact us</a> and we'll be happy to help.</p>
+  <p><strong>First time on Byga?</strong> You'll need to create a free account before registering. It only takes a minute — just click any program link above and select "Sign up as a new user" to get started. Questions? <a href="{{ site.baseurl }}/contact.html">Contact us</a> and we'll be happy to help.</p>
 </div>
 
 ## Volunteer for 2026–27

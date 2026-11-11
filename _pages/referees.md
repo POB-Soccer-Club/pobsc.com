@@ -19,5 +19,5 @@ Please note the following:
 
 ## Referee Resources
 
-- [Pre-Game Responsibilities](referee-pre-game.html)
-- [Making a Good First Impression](referee-first-impression.html)
+- [Pre-Game Responsibilities]({{ site.baseurl }}/referee-pre-game.html)
+- [Making a Good First Impression]({{ site.baseurl }}/referee-first-impression.html)

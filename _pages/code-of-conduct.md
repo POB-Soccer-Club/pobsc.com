@@ -111,4 +111,4 @@ A signed acknowledgment of this Code of Conduct is collected from each player, p
 
 Affiliated with ENYYSA & LIJSL
 
-<ul class="doc-list"><li><a data-kind="PDF" href="assets/docs/code-of-conduct-nov2025.pdf">Code of Conduct (PDF)<small>November 2025</small></a></li></ul>
+<ul class="doc-list"><li><a data-kind="PDF" href="{{ site.baseurl }}/assets/docs/code-of-conduct-nov2025.pdf">Code of Conduct (PDF)<small>November 2025</small></a></li></ul>

@@ -1,5 +1,5 @@
 <ul class="doc-list">
 {% for item in include.items %}
-<li><a data-kind="{{ item.kind }}" href="{{ item.url }}">{{ item.title }}{% if item.note %}<small>{{ item.note }}</small>{% endif %}</a></li>
+<li><a data-kind="{{ item.kind }}" href="{% if item.url contains '://' %}{{ item.url }}{% else %}{{ site.baseurl }}/{{ item.url }}{% endif %}">{{ item.title }}{% if item.note %}<small>{{ item.note }}</small>{% endif %}</a></li>
 {% endfor %}
 </ul>

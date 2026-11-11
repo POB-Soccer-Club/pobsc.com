@@ -27,6 +27,6 @@ Registration is now open! We've moved to **Byga**, our new online registration p
 - [2026 Fall Little Nuggets](https://pobsc.byga.net/programs/7kp7v5g035/signup) — our youngest players' introductory program.
 - [2026–2027 TOPSoccer (Special Needs)](https://pobsc.byga.net/programs/se73xxhnv8/signup) — a community-based program for athletes with disabilities.
 
-**How to sign up:** click the register button for your program, create a new Byga account or log in, then complete the form and submit payment. See [Program Registration](register.html) for details.
+**How to sign up:** click the register button for your program, create a new Byga account or log in, then complete the form and submit payment. See [Program Registration]({{ site.baseurl }}/register.html) for details.
 
 </article>

@@ -4,7 +4,7 @@ title: "TOPSoccer"
 lead: "The special children's soccer program of the Long Island Junior Soccer League."
 section: Programs
 ---
-<img class="float-right" src="assets/img/topsoccer.png" alt="TOPSoccer logo">
+<img class="float-right" src="{{ site.baseurl }}/assets/img/topsoccer.png" alt="TOPSoccer logo">
 
 Special Children's Soccer Program of the Long Island Junior Soccer League is for those children with mental and/or physical handicap conditions. This program was initiated to accommodate those children who are not able to participate in a regular or mainstream soccer activity. It provides an opportunity for that child who deviates from the average or normal child in mental, physical or social characteristics to such an extent that he or she requires modified educational practices and services in order to develop to his or her maximum capacity.
 
@@ -14,4 +14,4 @@ We have a Spring and Fall schedule similar to the regular or mainstream soccer p
 
 <a class="btn" href="https://pobsc.byga.net/programs/se73xxhnv8/signup">Register for 2026–2027 TOPSoccer</a>
 
-See the [Fall 2026 TOPSoccer Schedule](topsoccer-schedule.html).
+See the [Fall 2026 TOPSoccer Schedule]({{ site.baseurl }}/topsoccer-schedule.html).

@@ -24,4 +24,4 @@ documents:
 
 {% include doc-list.html items=page.documents %}
 
-See also the [Club By-Laws](by-laws.html), [Code of Conduct](code-of-conduct.html) and [Zero Tolerance Policy](zero-tolerance.html).
+See also the [Club By-Laws]({{ site.baseurl }}/by-laws.html), [Code of Conduct]({{ site.baseurl }}/code-of-conduct.html) and [Zero Tolerance Policy]({{ site.baseurl }}/zero-tolerance.html).

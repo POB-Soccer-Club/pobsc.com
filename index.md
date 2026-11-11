@@ -10,7 +10,7 @@ title: "Plainview–Old Bethpage Soccer Club"
       <h1>A love for the game.<br>A place to belong.</h1>
       <p>Since 1974, POBSC has put the welfare and growth of every child ahead of intense competition — helping kids build a love for soccer and a true sense of belonging in our community.</p>
       <div class="hero-ctas">
-        <a class="btn" href="register.html">Register for 2026–27</a>
+        <a class="btn" href="{{ site.baseurl }}/register.html">Register for 2026–27</a>
         <a class="btn ghost" href="#programs">Explore Programs</a>
       </div>
     </div>
@@ -19,10 +19,10 @@ title: "Plainview–Old Bethpage Soccer Club"
 
   <div class="quick">
     <div class="wrap">
-      <a href="register.html"><span class="ico">✎</span><span><b>Register</b><small>2026–27 programs on Byga</small></span></a>
-      <a href="schedule.html"><span class="ico">▦</span><span><b>Schedule</b><small>Fall 2026 intramural</small></span></a>
-      <a href="fields.html"><span class="ico">⌖</span><span><b>Fields</b><small>Locations &amp; directions</small></span></a>
-      <a href="news.html#volunteer-registration"><span class="ico">✚</span><span><b>Volunteer</b><small>Coach or join the board</small></span></a>
+      <a href="{{ site.baseurl }}/register.html"><span class="ico">✎</span><span><b>Register</b><small>2026–27 programs on Byga</small></span></a>
+      <a href="{{ site.baseurl }}/schedule.html"><span class="ico">▦</span><span><b>Schedule</b><small>Fall 2026 intramural</small></span></a>
+      <a href="{{ site.baseurl }}/fields.html"><span class="ico">⌖</span><span><b>Fields</b><small>Locations &amp; directions</small></span></a>
+      <a href="{{ site.baseurl }}/news.html#volunteer-registration"><span class="ico">✚</span><span><b>Volunteer</b><small>Coach or join the board</small></span></a>
     </div>
   </div>
 
@@ -30,7 +30,7 @@ title: "Plainview–Old Bethpage Soccer Club"
     <div class="wrap">
       <div class="section-head">
         <div><div class="kicker">2026–27 Season</div><h2>Programs</h2></div>
-        <a href="register.html">All programs &amp; registration</a>
+        <a href="{{ site.baseurl }}/register.html">All programs &amp; registration</a>
       </div>
       <div class="programs">
         <div class="card">
@@ -62,7 +62,7 @@ title: "Plainview–Old Bethpage Soccer Club"
           <div class="body">
             <h3>Travel &amp; Pre-Travel</h3>
             <p>Almost 40 competitive travel teams. U9 players can join Pre-Travel, run in partnership with the Long Island Junior Soccer League.</p>
-            <a class="more" href="travel-tryouts.html">Tryout Q&amp;A</a>
+            <a class="more" href="{{ site.baseurl }}/travel-tryouts.html">Tryout Q&amp;A</a>
           </div>
         </div>
       </div>
@@ -83,14 +83,14 @@ title: "Plainview–Old Bethpage Soccer Club"
       <div>
         <div class="section-head">
           <div><div class="kicker">Latest</div><h2>Club News</h2></div>
-          <a href="news.html">All news</a>
+          <a href="{{ site.baseurl }}/news.html">All news</a>
         </div>
         <div class="news">
           <article>
             <div class="thumb"></div>
             <div class="txt">
               <time datetime="2026-07-07">Jul 7, 2026</time>
-              <h3><a href="news.html#volunteer-registration">2026–27 volunteer registration now open</a></h3>
+              <h3><a href="{{ site.baseurl }}/news.html#volunteer-registration">2026–27 volunteer registration now open</a></h3>
               <p>We need intramural coaches — no experience needed, just enthusiasm for the game — plus Executive Board members and Division Heads.</p>
             </div>
           </article>
@@ -98,7 +98,7 @@ title: "Plainview–Old Bethpage Soccer Club"
             <div class="thumb"></div>
             <div class="txt">
               <time datetime="2026-06-16">Jun 16, 2026</time>
-              <h3><a href="news.html#registration-2026-27">2026–2027 registration is open</a></h3>
+              <h3><a href="{{ site.baseurl }}/news.html#registration-2026-27">2026–2027 registration is open</a></h3>
               <p>We've moved to Byga, our new online registration platform. Create a free account, pick your program and submit payment.</p>
             </div>
           </article>
@@ -106,7 +106,7 @@ title: "Plainview–Old Bethpage Soccer Club"
             <div class="thumb"></div>
             <div class="txt">
               <time>Referee Program</time>
-              <h3><a href="referees.html">Referee for POBSC</a></h3>
+              <h3><a href="{{ site.baseurl }}/referees.html">Referee for POBSC</a></h3>
               <p>Players in 8th grade and up can join our in-house referee program. Apply through the POBSC Referee Application.</p>
             </div>
           </article>
@@ -120,7 +120,7 @@ title: "Plainview–Old Bethpage Soccer Club"
           <li><div class="date"><b>14</b><span>Nov</span></div><div><strong>Week 8</strong><small>Nov 14 – 15</small></div></li>
           <li><div class="date"><b>21</b><span>Nov</span></div><div><strong>Rain date, if needed</strong><small>Nov 21 – 22</small></div></li>
         </ul>
-        <a class="events-link" href="schedule.html">Full schedule, times &amp; locations →</a>
+        <a class="events-link" href="{{ site.baseurl }}/schedule.html">Full schedule, times &amp; locations →</a>
       </aside>
     </div>
   </section>
@@ -136,15 +136,15 @@ title: "Plainview–Old Bethpage Soccer Club"
         <li><b>3</b>Complete the form and submit payment</li>
       </ol>
       <div class="hero-ctas">
-        <a class="btn" href="register.html">Register Now</a>
-        <a class="btn ghost" href="contact.html">Contact Us</a>
+        <a class="btn" href="{{ site.baseurl }}/register.html">Register Now</a>
+        <a class="btn ghost" href="{{ site.baseurl }}/contact.html">Contact Us</a>
       </div>
       <div class="sponsor-callout">
         <div>
           <h3>Become a sponsor</h3>
           <p>POBSC is a 501(c)(3) non-profit. Sponsor donations keep fees low, fund scholarships, and helped put AEDs at every field our children play on. A $500 donation puts your company's name or logo on a Little Nuggets, Pre-K or K division shirt and on our website.</p>
         </div>
-        <a class="btn" href="sponsorship.html">Sponsorship info</a>
+        <a class="btn" href="{{ site.baseurl }}/sponsorship.html">Sponsorship info</a>
       </div>
     </div>
   </section>

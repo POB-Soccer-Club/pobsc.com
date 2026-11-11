@@ -30,4 +30,4 @@ other_contacts:
 
 {% include contact-grid.html items=page.other_contacts %}
 
-For a specific board member or division head, see [Club Officials](officials.html).
+For a specific board member or division head, see [Club Officials]({{ site.baseurl }}/officials.html).

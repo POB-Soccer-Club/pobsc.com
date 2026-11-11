@@ -4,7 +4,7 @@ title: "Club By-Laws"
 lead: "Approved November 25, 2025."
 section: Club
 ---
-<ul class="doc-list"><li><a data-kind="PDF" href="assets/docs/pobsc-bylaws-2025-11-25.pdf">By-Laws Adopted 11/25/2025<small>Official PDF</small></a></li></ul>
+<ul class="doc-list"><li><a data-kind="PDF" href="{{ site.baseurl }}/assets/docs/pobsc-bylaws-2025-11-25.pdf">By-Laws Adopted 11/25/2025<small>Official PDF</small></a></li></ul>
 
 ## Constitution
 

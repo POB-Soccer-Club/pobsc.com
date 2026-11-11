@@ -4,7 +4,7 @@
 {% endif %}
 
 <header id="header"{% unless include.home %} class="solid"{% endunless %}>
-  <a class="brand{% unless include.home %} show{% endunless %}" id="brand" href="index.html">
+  <a class="brand{% unless include.home %} show{% endunless %}" id="brand" href="{{ site.baseurl }}/index.html">
     <b>Plainview&ndash;Old Bethpage</b>
     <span>Soccer Club</span>
   </a>
@@ -24,12 +24,12 @@
       <button class="nav-top" aria-expanded="false">{{ section.label }}</button>
       <div class="dropdown">
         {% for item in section.items %}
-        <a href="{{ item.page }}.html"{% if item.page == current_slug %} aria-current="page"{% endif %}>{{ item.text }}</a>
+        <a href="{{ site.baseurl }}/{{ item.page }}.html"{% if item.page == current_slug %} aria-current="page"{% endif %}>{{ item.text }}</a>
         {% endfor %}
       </div>
     </div>
     {% endfor %}
-    <a class="btn" href="register.html">Register</a>
+    <a class="btn" href="{{ site.baseurl }}/register.html">Register</a>
   </nav>
   <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
 </header>

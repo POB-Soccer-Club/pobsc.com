@@ -5,22 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ page.title | escape }} &middot; Plainview&ndash;Old Bethpage Soccer Club</title>
 <meta name="description" content="{{ page.lead | default: site.description | strip_html | escape }}">
-<link rel="icon" href="assets/pobsc-shield.png">
+<link rel="icon" href="{{ site.baseurl }}/assets/pobsc-shield.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/site.css">
 </head>
 <body>
 
-<a id="logo" class="static" href="index.html" aria-label="Plainview&ndash;Old Bethpage Soccer Club home">
-  <div class="inner"><img src="assets/pobsc-shield.png" alt="" draggable="false"></div>
+<a id="logo" class="static" href="{{ site.baseurl }}/index.html" aria-label="Plainview&ndash;Old Bethpage Soccer Club home">
+  <div class="inner"><img src="{{ site.baseurl }}/assets/pobsc-shield.png" alt="" draggable="false"></div>
 </a>
 
 {% include nav.html %}
 
 <section class="page-hero">
   <div class="wrap">
-    <div class="crumbs"><a href="index.html">Home</a>{% if page.section %} <span>/</span> {{ page.section }}{% endif %}</div>
+    <div class="crumbs"><a href="{{ site.baseurl }}/index.html">Home</a>{% if page.section %} <span>/</span> {{ page.section }}{% endif %}</div>
     <h1>{{ page.title }}</h1>
     {% if page.lead %}<p class="lead">{{ page.lead }}</p>{% endif %}
   </div>
@@ -38,10 +38,10 @@
         <h4>{{ section.label }}</h4>
         {% assign current_slug = page.name | replace: '.html', '' | replace: '.md', '' %}
         {% for item in section.items %}
-        <a href="{{ item.page }}.html"{% if item.page == current_slug %} aria-current="page"{% endif %}>{{ item.text }}</a>
+        <a href="{{ site.baseurl }}/{{ item.page }}.html"{% if item.page == current_slug %} aria-current="page"{% endif %}>{{ item.text }}</a>
         {% endfor %}
       </div>
-      <div class="side-cta"><b>2026&ndash;27 registration is open</b><a class="btn" href="register.html">Register</a></div>
+      <div class="side-cta"><b>2026&ndash;27 registration is open</b><a class="btn" href="{{ site.baseurl }}/register.html">Register</a></div>
     </aside>
     {% endif %}
     {% endfor %}
@@ -51,6 +51,6 @@
 
 {% include footer.html %}
 
-<script src="assets/site.js"></script>
+<script src="{{ site.baseurl }}/assets/site.js"></script>
 </body>
 </html>

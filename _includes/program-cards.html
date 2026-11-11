@@ -6,7 +6,7 @@
       <p>{{ prog.description }}</p>
       <a class="btn" href="{{ prog.url }}">Register</a>
     </div>
-    {% if prog.qr %}<img src="{{ prog.qr }}" alt="QR code for {{ prog.title }} registration">{% endif %}
+    {% if prog.qr %}<img src="{{ site.baseurl }}/{{ prog.qr }}" alt="QR code for {{ prog.title }} registration">{% endif %}
   </div>
 {% endfor %}
 </div>

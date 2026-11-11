@@ -9,7 +9,7 @@
       <div>
         <h4>{{ section.label }}</h4>
         {% for item in section.items %}
-        <a href="{{ item.page }}.html">{{ item.text }}</a>
+        <a href="{{ site.baseurl }}/{{ item.page }}.html">{{ item.text }}</a>
         {% endfor %}
       </div>
       {% endfor %}

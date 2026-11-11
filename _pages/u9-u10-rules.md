@@ -30,4 +30,4 @@ Below will be an outline to be reviewed by all (*effective immediately)* for exp
    1. After the ball is put into play by the goalkeeper, the opposing team can cross the build out line and play resumes as normal.
    1. If a goalkeeper punts the ball, *an indirect free kick* will be awarded to the opposing team from the spot of the offense. If the punt occurs within the goal area, the indirect free kick should be taken on the goal area line parallel to the goal line at the nearest point to where the infringement occurred.
 
-![Diagram of a U9/U10 field showing the build-out lines](assets/img/inline-1.png)
+![Diagram of a U9/U10 field showing the build-out lines]({{ site.baseurl }}/assets/img/inline-1.png)

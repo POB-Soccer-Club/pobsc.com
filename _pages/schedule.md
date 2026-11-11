@@ -79,4 +79,4 @@ The U5 (Pre-K) and U6 (Kindergarten) programs allow for the request to be groupe
 
 For U7 – U9/U10 there will be no friend requests. As the children get older the games get more competitive and providing fair and balanced competition becomes the top priority.
 
-See [Field Locations](fields.html) for maps and directions.
+See [Field Locations]({{ site.baseurl }}/fields.html) for maps and directions.
