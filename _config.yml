@@ -1,7 +1,7 @@
 title: "Plainview–Old Bethpage Soccer Club"
 description: "Youth soccer for Plainview and Old Bethpage, New York, since 1974."
 url: ""
-baseurl: "/pob-soccer-site"
+baseurl: "/pobsc.com"
 markdown: kramdown
 
 collections:
