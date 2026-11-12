@@ -6,10 +6,10 @@ section: Club
 
 board:
   - role: President
-    email: president@pobsc.com
-  - role: Executive Vice President
     name: Brian Wood
     phone: "973-600-7995"
+    email: president@pobsc.com
+  - role: Executive Vice President
     email: evp@pobsc.com
   - role: Travel Vice President
     name: Scott Wilk
