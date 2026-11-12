@@ -134,12 +134,12 @@ Below is the contact information for our executive board and executive committee
 
 ## Executive Board
 
-{% include people-table.html columns="Position,Name,Phone,Email" people=page.board %}
+{% include people-grid.html people=page.board %}
 
 ## Executive Committee
 
-{% include people-table.html columns="Position,Name,Phone,Email" people=page.committee %}
+{% include people-grid.html people=page.committee %}
 
 ## Intramural Division Heads
 
-{% include people-table.html columns="Division,Name,Phone,Email" people=page.division_heads %}
+{% include people-grid.html people=page.division_heads %}
